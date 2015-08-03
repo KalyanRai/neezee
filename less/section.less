@@ -1,0 +1,52 @@
+html, body, .wrapper, section {
+	height: 100%;
+}
+
+.wrapper {
+	section {
+        position: relative;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+		background-attachment: fixed;
+	}
+}
+
+#welcome {
+    width: 100%;
+	background-image: url(../img/businessman.jpg);    
+}
+
+#cv {
+    width: 100%;
+	background-image: url(../img/Germany.jpg);
+}
+
+#animation {
+	background-image: url(../img/golden_gate_bridge.jpg);    
+}
+
+// Hope these would be temporary settings, else find an alternative
+.cv-wrapper {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    margin: 0 auto;    
+    top: 10%;
+}
+
+.cv-container, .photo-holder, .cv-timeline {
+    height: inherit;   
+//    border: thin solid black;
+}
+
+.cv-container { 
+    padding: 0;
+    overflow: hidden;
+    
+    .row {
+        margin: 0;        
+        width: 100%;
+        height: 100%;
+    }    
+}
