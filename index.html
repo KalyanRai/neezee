@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>It's me, Kalyan</title>
+    <meta name="description" content="Personal Web Page">
+    <meta name="keywords" content="Kalyan Rai, Kalyan, Kalyan Rai personal">
+    <meta name="author" content="Kalyan Rai">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="css/styles.css">    
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <button class="nav-button" id="nav-button">+</button><!-- nav-button -->
+            <div class="nav-wrapper" id="nav-wrapper">
+                <ul>
+                    <li><a href="#animation"><span class="glyphicon glyphicon-globe"></span></a></li>   
+                    <li><a href="#cv"><span class="glyphicon glyphicon-education"></span></a></li>                    
+                    <li><a href="#welcome" class="section-current"><span class="glyphicon glyphicon-home"></span></a></li>                                  
+                </ul>
+            </div><!-- nav-wrapper -->
+        </nav>
+        <section id="welcome">
+            <div id="nav-hint"></div>
+            <div class="welcome-message">
+                <h1>Welcome</h1>
+                <p>Dare to achieve everything</p>
+            </div><!-- /.welcome-message -->
+        </section><!-- /#welcome -->        
+        <section id="cv">
+            <div class="cv-wrapper">
+                <div class="container cv-container">
+                    <div class="row">
+                        <div class="col-md-4 photo-holder">
+                            <div class="photo"></div>
+                        </div><!-- /.photo-holder -->
+                        <div class="col-md-8 cv-timeline">
+                            <div class="cv-timeline-education">
+                                <button class="timeline-toggle">+ expand all</button>
+
+                                <br class="clear">                                
+                                <div class="cv-timeline-block">
+                                    <div class="cv-timeline-year grade-ten">
+                                        <h5>2006</h5>
+                                    </div><!-- /.cv-timeline-block -->
+                                    <div class="cv-timeline-qualification-block">
+                                        <div class="cv-timeline-qualification grade-ten-desc">
+                                            <p class="cv-graduation-date">6 July</p>                                    
+                                            <p>Grade 10</p>
+                                            <p>Vijayapur School, Nepal <a href="https://goo.gl/maps/DBKU3" target="_blank" class="school-location"><span class="glyphicon glyphicon-map-marker"></span></a></p>
+                                        </div><!-- /.cv-timeline-qualification -->
+                                    </div><!-- /.cv-timeline-qualification-block -->
+                                </div><!-- /.cv-timeline-block -->         
+
+                                <div class="cv-timeline-block">
+                                    <div class="cv-timeline-year grade-twelve">
+                                        <h5>2008</h5>
+                                    </div><!-- /.cv-timeline-block -->
+                                    <div class="cv-timeline-qualification-block">
+                                        <div class="cv-timeline-qualification grade-twelve-desc">
+                                            <p class="cv-graduation-date">31 July</p>
+                                            <p>Grade 12</p>
+                                            <p>United Academy, Nepal <a href="https://goo.gl/maps/qG9no" target="_blank" class="school-location"><span class="glyphicon glyphicon-map-marker"></span></a></p>
+                                        </div><!-- /.cv-timeline-qualification -->
+                                    </div><!-- /.cv-timeline-qualification-block -->                                        
+                                </div><!-- /.cv-timeline-block --> 
+
+                                <div class="cv-timeline-block">
+                                    <div class="cv-timeline-year bsc">
+                                        <h5>2011</h5>
+                                    </div><!-- /.cv-timeline-block -->
+                                    <div class="cv-timeline-qualification-block">
+                                        <div class="cv-timeline-qualification bsc-desc">
+                                            <p class="cv-graduation-date">28 June</p>
+                                            <p>BSc Computing</p>
+                                            <p>Buckinghamshire New University <a href="https://goo.gl/maps/gc2Zb" target="_blank" class="school-location"><span class="glyphicon glyphicon-map-marker"></span></a></p>
+                                        </div><!-- /.cv-timeline-qualification -->
+                                    </div><!-- /.cv-timeline-qualification-block -->                                        
+                                </div><!-- /.cv-timeline-block --> 
+
+                                <div class="cv-timeline-block">
+                                    <div class="cv-timeline-year msc">
+                                        <h5>2013</h5>
+                                    </div><!-- /.cv-timeline-block -->
+                                    <div class="cv-timeline-qualification-block">
+                                        <div class="cv-timeline-qualification msc-desc">
+                                            <p class="cv-graduation-date">1 November</p>
+                                            <p>MSc Software Engineering</p>
+                                            <p>Queen Mary University of London <a href="https://goo.gl/maps/AtGRy" target="_blank" class="school-location"><span class="glyphicon glyphicon-map-marker"></span></a></p>
+                                        </div><!-- /.cv-timeline-qualification -->
+                                    </div><!-- /.cv-timeline-qualification-block -->                                        
+                                </div><!-- /.cv-timeline-block -->
+                            </div><!-- /.cv-timeline-education -->
+                        </div><!-- /.cv-timeline -->
+                    </div>
+                </div><!-- /.cv-container -->
+            </div><!-- /.cv-wrapper -->
+        </section><!-- /#cv -->
+        <section id="animation"></section><!-- /#animation -->
+    </div><!-- /.wrapper -->
+    
+    <script src="js/modernizr.custom.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>    
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.debouncedresize.js"></script>
+    <script src="js/waypoints.min.js"></script>    
+    <script src="js/nav.js"></script> 
+    <script src="js/scrollPage.js"></script>
+    <script src="js/cv.js"></script>
+    <script>
+        $(document).ready(function() {
+            scrollPage.init();
+            
+            $.timeliner({
+                startOpen:['.bsc > h5', '.msc > h5']
+            });
+        });
+    </script>
+</body>
+</html>
